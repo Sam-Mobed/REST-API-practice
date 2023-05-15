@@ -24,3 +24,8 @@ const messageRouter = require("./routes/messages");
 //any requests to these paths will be handled by the appropriate router module
 app.use("/api/messages", messageRouter);
 app.use("/api/auth", authRouter);
+
+//start the server
+app.listen(port, () =>{
+    console.log(`Listening on port ${port}...`);
+});
